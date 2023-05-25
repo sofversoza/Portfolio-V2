@@ -1,4 +1,40 @@
 :root {
+  font-family: "classica-pro", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ffff;
+
+  /* COLORS */
+  --chocolate: #271916;
+  --sky: #617E92;
+  --slate: #E3E1DB;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--chocolate);
+}
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  opacity: .02;
+  z-index: 1500;
+  pointer-events: none;
+  background: url(../src/assets/noise.gif);
+}
+
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -13,7 +49,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,7 +57,6 @@ a {
 a:hover {
   color: #535bf2;
 }
-
 body {
   margin: 0;
   display: flex;
@@ -30,12 +64,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -54,7 +86,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -66,4 +97,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
