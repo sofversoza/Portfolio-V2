@@ -1,0 +1,100 @@
+.home {
+  position: relative;
+  min-height: 90vh;
+  margin: 3%;
+  overflow: hidden;
+  /* background-color: var(--slate); */
+  /* border: 1px solid var(--blush); */
+}
+
+.name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--slate);
+  /* border: 1px solid green; */
+}
+.name h1 {
+  font-size: 6.65rem;
+  letter-spacing: -10px;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.welcome-message {
+  position: absolute;
+  bottom: 6%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 2%;
+  text-align: left;
+  /* background: var(--blush); */
+}
+.welcome-message p {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.85rem;
+}
+.welcome-message .welcome1 {
+  font-size: 3.5rem;
+  letter-spacing: -1px;
+}
+.welcome-message .welcome2 {
+  font-size: 2.8rem;
+  word-spacing: -1px;
+  letter-spacing: 1px;
+  line-height: 50%;
+}
+.welcome-message .welcome1,
+.welcome-message .welcome2 {
+  cursor: pointer;
+}
+.welcome-message .welcome1:hover,
+.welcome-message .welcome2:hover {
+  color: var(--blush);
+}
+.welcome-message .highlight,
+.welcome-message .amp {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: -1px;
+  line-height: 115%;
+}
+.welcome-message .highlight {
+  color: var(--periwinkle);
+  font-size: 2rem;
+}
+.welcome-message .zoom {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform .2s;
+}
+.welcome-message .zoom:hover {
+  transform: scale(1.03);
+}
+
+/* ANIMATION */
+/* animation: name duration timing-function delay iteration-count fill-mode */
+.animate-letter-spacing {
+  animation: increaseLetterSpace 5s linear 1s forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 2s linear forwards;
+}
+
+.animate-bounce  {
+  display: block;
+	animation: bouncey 0.8s;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+	animation-iteration-count: infinite;
+}

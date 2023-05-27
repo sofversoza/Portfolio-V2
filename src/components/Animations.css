@@ -1,0 +1,26 @@
+@keyframes increaseLetterSpace {
+  0% {
+    letter-spacing: -10px;
+  }
+  100% {
+    letter-spacing: 10px; /* Adjust the final letter-spacing value as desired */
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bouncey {
+	from {
+		transform: translate3d(0, -5px, 0);
+	}
+	to {
+		transform: translate3d(0, 3px, 0);
+	}
+}

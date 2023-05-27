@@ -1,0 +1,14 @@
+.loader {
+  min-height: 100vh;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  animation: fade-in 2.5s linear;
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}

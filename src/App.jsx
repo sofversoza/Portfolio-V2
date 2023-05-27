@@ -1,12 +1,25 @@
-
+import React, { useState, useEffect } from "react"
+import Loader from "./components/landing/Loader"
+import Home from "./components/home/Home"
 
 function App() {
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3150)
+  }, [])
 
   return (
-    <>
-      <h1>Hello World</h1>
-      <p>Hello World</p>
-    </>
+    <div>
+      { loading ? (
+        <Loader />
+      ) : (
+        <Home />
+      )}
+    </div>
   )
 }
 
