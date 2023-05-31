@@ -1,0 +1,29 @@
+.nav {
+  border-bottom: 0.55px solid var(--slate);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 10vh;
+  margin: 0 1% 0 3%;
+  /* position: fixed;
+  top: 0;
+  width: 90%;
+  z-index: 9999; */
+}
+
+.nav .social-links ul {
+  /* background: var(--slate); */
+  /* border: 1px solid var(--slate); */
+  min-width: 45vw;
+  max-width: 45vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav a {
+  margin-right: 35px;
+}
+.nav a:hover {
+  color: var(--periwinkle);
+}

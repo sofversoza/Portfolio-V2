@@ -19,8 +19,11 @@
 @keyframes bouncey {
 	from {
 		transform: translate3d(0, -5px, 0);
+    color: var(--blush);
 	}
 	to {
-		transform: translate3d(0, 3px, 0);
+		transform: translate3d(0, 3.5px, 0);
+    color: var(--slate);
 	}
 }
+

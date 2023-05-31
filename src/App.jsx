@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react"
 import Loader from "./components/landing/Loader"
 import Home from "./components/home/Home"
+import About from "./components/about/About"
+import Contact from "./components/contact/Contact"
+import "./App.css"
+import Sidebar from "./components/Sidebar"
+import Navigation from "./components/nav/Navigation"
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -9,7 +14,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 3150)
+    }, 2360)
   }, [])
 
   return (
@@ -17,7 +22,15 @@ function App() {
       { loading ? (
         <Loader />
       ) : (
-        <Home />
+        <div className="App">
+          <div className="app-content">
+          <Navigation />
+            <Home />
+            <About />
+            <Contact />
+          </div>
+          <Sidebar />
+        </div>
       )}
     </div>
   )

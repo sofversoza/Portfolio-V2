@@ -1,0 +1,37 @@
+.sidebar {
+  background: var(--chocolate);
+  min-width: 6vw;
+  max-width: 6vw;
+  overflow: hidden;
+  /* position: sticky; */
+
+  /* border: 1px solid var(--blush); */
+}
+
+.sidebar-content {
+  position: fixed;
+  padding: 0 2vw;
+  min-height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+.sidebar-content ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.sidebar-content a {
+  margin-bottom: 35px;
+}
+.sidebar-content a:hover {
+  color: var(--blush);
+}
+.sidebar-content a:active {
+  color: var(--blush);
+}

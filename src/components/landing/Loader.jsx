@@ -14,7 +14,7 @@ export default function Loader({ setLoading }) {
         const nextLetter = message[currentIndex]
         return prevLetter + nextLetter
       })
-    }, 400)
+    }, 300)
 
     // interval clean up on component unmount
     return () => {
