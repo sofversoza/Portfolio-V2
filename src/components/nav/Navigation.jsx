@@ -3,7 +3,7 @@ import "./Navigation.css"
 
 export default function Navigation() {
   return (
-    <div className="nav">
+    <div id="main" className="nav">
 
       <div className="social-links">
         <ul>

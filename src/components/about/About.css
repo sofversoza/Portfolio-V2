@@ -1,3 +1,117 @@
 .about {
-  /* min-height: 100vh; */
+  position: relative;
+  min-height: 90vh !important;
+  max-height: 90vh !important;
+  /* border: 1px solid red; */
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content .details {
+  /* z-index: 1; */
+  overflow: hidden;
+  position: absolute;
+  right: 3%;
+  bottom: 13%;
+  width: 660px;
+  height: 420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about-content .details .heading {
+  border-bottom: 0.5px solid var(--slate);
+  margin-bottom: 10px;
+}
+.about-content .details .heading h2 {
+  font-size: 1rem;
+}
+.about-content .details .heading h2:nth-child(2) {
+  margin-bottom: 10px;
+}
+.about-content .details p {
+  font-size: 0.95rem;
+}
+.about-content .details .left,
+.about-content .details .right {
+  width: 330px;
+  height: inherit;
+  padding: 3% 5%;
+  /* display: flex; */
+}
+.about-content .details .left {
+  background-color: var(--periwinkle);
+}
+.about-content .details .right {
+  background: var(--slate);
+  color: var(--gray);
+}
+.about-content .details .right .heading {
+  border-bottom: 0.5px solid var(--gray);
+}
+
+.about-content .typed-animation {
+  z-index: 10000;
+  overflow: hidden;
+  min-width: 100%;
+  position: absolute;
+  bottom: 13%;
+  left: 5%;
+  display: flex;
+  justify-content: flex-start;
+  /* border: 1px solid red; */
+}
+.about-content .typed-animation .typed {
+  /* background-color: yellow; */
+  margin-left: 15px;
+  color: var(--blush);
+}
+.about-content .typed-animation span,
+.about-content .typed-animation p {
+  cursor: pointer;
+  color: var(--slate);
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.about-content .about-title {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  padding: 0 3%;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.about-content .about-title h2 {
+  cursor: pointer;
+  transition: transform .2s;
+  line-height: 1;
+}
+.one:hover,
+.two:hover,
+.three:hover {
+  transform: scale(1.05);
+  color: var(--periwinkle);
+}
+.about-content .about-title .one {
+  font-size: 5rem;
+}
+.about-content .about-title .two {
+  font-size: 5rem;
+  letter-spacing: 3px;
+  margin-left: 55px;
+}
+.about-content .about-title .three {
+  font-size: 6.5rem;
+  letter-spacing: 3px;
+  margin-left: 20px;
 }

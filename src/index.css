@@ -1,8 +1,8 @@
 :root {
-  font-family: trade-gothic-next, sans-serif;
+  font-family: nimbus-sans-extended, sans-serif;
   font-weight: 300;
   font-style: normal;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.15px;
   color: #ffff;
   scroll-behavior: smooth;
 
@@ -16,7 +16,7 @@
   --grass: #1A3018;
   --sky: #617E92;
   --blush: #E8B2B5;
-  --mauve: #916B7B;
+  --petal: #febdc8a6;
   --slate: #ffffffeb;
   --gray: #302F2F;
 }
@@ -74,7 +74,7 @@ a {
   justify-content: center;
   min-height: 100vh;
   max-height: 100vh;
-  margin: 0 1% 0 3%;
+  margin: 0 1% 0 5%;
   border-right: 0.55px solid var(--slate);
 }
 

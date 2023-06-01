@@ -1,0 +1,75 @@
+.form {
+  /* padding: 1% 1%; */
+  min-width: 440px;
+  max-width: 440px;
+  min-height: 250px;
+  max-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--slate); */
+}
+
+.form ::placeholder {
+  /* opacity for Firefox users */
+  opacity: 1;
+  color: var(--slate);
+  font-size: 0.80rem;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+}
+
+.form input[type=text], input[type=email] {
+  min-width: 100%;
+}
+
+.form textarea {
+  min-width: 100%;
+  min-height: 100px;
+  resize: none;
+}
+
+.form input, textarea {
+  color: var(--slate);
+  margin: 8px 0;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 0.05px solid var(--slate) !important;
+  outline: none;
+  font-family: inherit;
+  /* Safari borders */
+  /* -webkit-appearance: none; */
+}
+
+.form input:focus, textarea:focus {
+  background-color: rgba(249, 229, 232, 0.403);
+}
+
+.form button {
+  background: transparent;
+  border: none;
+  color: var(--slate);
+  font-size: 0.9rem;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  cursor: pointer;
+  margin-top: 20px;
+  /* margin-left: 10px; */
+}
+.form button:hover {
+  color: var(--blush);
+}
+
+.form .icon {
+  vertical-align: middle;
+  margin-top: -2.5px;
+  margin-left: 5px;
+}

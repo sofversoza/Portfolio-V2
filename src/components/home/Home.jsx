@@ -10,8 +10,8 @@ export default function Home() {
   
   return (
     <>
-      {/* <Navigation /> */}
-      <div id="home" className="centered home">
+      <Navigation />
+      <div className="centered home">
 
         <div className="name">
           <h1 className="animate-letter-spacing"><span>S</span>ofia</h1>
@@ -38,10 +38,6 @@ export default function Home() {
             </div>
           </p>
         </div>
-
-
-
-
       </div>
     </>
   )

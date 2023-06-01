@@ -7,7 +7,7 @@ export default function Sidebar() {
       <div className="sidebar-content">
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a href="#main">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
